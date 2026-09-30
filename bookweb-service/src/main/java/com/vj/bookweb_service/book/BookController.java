@@ -42,4 +42,24 @@ public class BookController {
     public Book addBook(@RequestBody Book book) {
         return bookService.addBook(book);
     }
+
+    // PUT /api/books/1/borrow – mark a book as borrowed
+    @PutMapping("/{id}/borrow")
+    public ResponseEntity<Book> borrowBook(@PathVariable Integer id) {
+        Book book = bookService.setStatus(id, "Borrowed");
+        if (book == null) {
+            return ResponseEntity.notFound().build();   // 404 Not Found
+        }
+        return ResponseEntity.ok(book);                  // 200 OK
+    }
+
+    // PUT /api/books/1/return – mark a book as available again
+    @PutMapping("/{id}/return")
+    public ResponseEntity<Book> returnBook(@PathVariable Integer id) {
+        Book book = bookService.setStatus(id, "available");
+        if (book == null) {
+            return ResponseEntity.notFound().build();   // 404 Not Found
+        }
+        return ResponseEntity.ok(book);                  // 200 OK
+    }
 }

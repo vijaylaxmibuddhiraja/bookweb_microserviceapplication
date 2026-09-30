@@ -32,4 +32,14 @@ public class BookService {
     public Book addBook(Book book) {
         return bookRepository.save(book);
     }
+
+    // Change a book's status (returns null if the book does not exist)
+    public Book setStatus(Integer id, String status) {
+        Book book = bookRepository.findById(id).orElse(null);
+        if (book == null) {
+            return null;
+        }
+        book.setStatus(status);
+        return bookRepository.save(book);
+    }
 }
