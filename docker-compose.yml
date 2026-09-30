@@ -1,0 +1,19 @@
+services:
+  book-service:
+    build: ./bookweb-service
+    image: bvijaylaxmi/bookweb-service:2.0
+    ports:
+      - "8080:8080"
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx256m"
+
+  loan-service:
+    build: ./loan-service
+    image: bvijaylaxmi/loan-service:1.0
+    ports:
+      - "8081:8081"
+    environment:
+      BOOK_SERVICE_URL: http://book-service:8080
+      JAVA_TOOL_OPTIONS: "-Xmx256m"
+    depends_on:
+      - book-service
