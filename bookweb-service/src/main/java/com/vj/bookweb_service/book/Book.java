@@ -69,13 +69,6 @@ import jakarta.persistence.*;
             this.category = category;
         }
 
-        public boolean isAvailable() {
-            return "available".equals(status);
-        }
-
-        public void setAvailable(boolean available) {
-            this.status = available ? "available" : "borrowed";
-        }
 
         @Override
         public String toString() {
