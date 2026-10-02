@@ -4,3 +4,18 @@ INSERT INTO books (title, author, category, status) VALUES ('A Man Called Ove', 
 INSERT INTO books (title, author, category, status) VALUES ('The Girl with the Dragon Tattoo', 'Stieg Larsson', 'Crime', 'Borrowed');
 INSERT INTO books (title, author, category, status) VALUES ('Clean Code', 'Robert C. Martin', 'Programming', 'Available');
 INSERT INTO books (title, author, category, status) VALUES ('The Pragmatic Programmer', 'Andrew Hunt', 'Programming', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('The Brothers Lionheart', 'Astrid Lindgren', 'Children', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Emil of Lonneberga', 'Astrid Lindgren', 'Children', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Anxious People', 'Fredrik Backman', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('The Emigrants', 'Vilhelm Moberg', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Faceless Killers', 'Henning Mankell', 'Crime', 'Borrowed');
+INSERT INTO books (title, author, category, status) VALUES ('The Hundred-Year-Old Man Who Climbed Out of the Window and Disappeared', 'Jonas Jonasson', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Design Patterns', 'Erich Gamma', 'Programming', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Refactoring', 'Martin Fowler', 'Programming', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Head First Java', 'Kathy Sierra', 'Programming', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('The God of Small Things', 'Arundhati Roy', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('The White Tiger', 'Aravind Adiga', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Malgudi Days', 'R. K. Narayan', 'Fiction', 'Available');
+INSERT INTO books (title, author, category, status) VALUES ('Sapiens', 'Yuval Noah Harari', 'History', 'Borrowed');
+INSERT INTO books (title, author, category, status) VALUES ('The Hobbit', 'J. R. R. Tolkien', 'Fantasy', 'Available');
+
