@@ -3,7 +3,7 @@
 Two Spring Boot microservices that run as Docker containers on AWS EC2.
 loan-service calls book-service synchronously over REST before it saves a loan.
 
-![Design of microservice](docs/architecture.png)
+![Design of microservice](Docs/architecture.png)
 
 ## Services
 - **book-service** (port 8080): manages books
